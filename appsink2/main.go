@@ -28,7 +28,6 @@ func main() {
 	pipeline.SetState(gst.StatePlaying)
 
 	for {
-
 		sample, err := element.PullSample()
 		if err != nil {
 			if element.IsEOS() == true {
